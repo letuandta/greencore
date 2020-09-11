@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Greencore</title>
+        <link href="../css/css-form.css" rel="stylesheet"/>
+        <link href="../css/css-register.css" rel="stylesheet" />
+        <link href="../css/css-login.css" rel="stylesheet" />
+        <link href="../css/css-product.css" rel="stylesheet" />
+        <link href="../css/css-productmenu.css" rel="stylesheet" />
+        <link href="../css/css-news.css" rel="stylesheet" />
+        <link href="../css/css-advertisement.css" rel="stylesheet" />       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/js.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+        <link href="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.15752-9/117076668_979598572493138_7428982129376158369_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=UYx4ZEDiW-QAX89bxl0&_nc_ht=scontent.fsgn6-1.fna&oh=92559c02a00e672e096c959b92eef741&oe=5F549755" rel="shortcut icon"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+        </style>
+    </head>
+    <body>   
+        <header id="Header" class="header flexbox">
+            <div class="search flexbox">
+                <input class="timkiem" type="text" placeholder="Tìm kiếm: Sen đá đỏ, Cây cảnh mini,...">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="logo">
+                <a href="home.html"><img src="../image/logo.png" alt="logo"/></a>              
+            </div>
+            <div class="bag flexbox">
+                <div class="shopping-icon">
+                    <i class="fas fa-shopping-cart"></i> 
+                </div>
+                <div class="shopping">
+                    <div class="thanhtien">
+                        <a href="#"> Thành tiền: <strong><span style="color: red;">0</span> VNĐ</strong></a>
+                    </div>
+                    <div class="giohang">
+                        <a href="#"><strong>Xem giỏ hàng</strong></a>
+                    </div>
+               </div>
+            </div>
+            <div class="dangnhap">
+                <a href="#" onclick="login()"><i class="fas fa-sign-in-alt"></i> Đăng nhập | </a>
+            </div>
+            <div class="dangky">
+                <a href="#" onclick="register()"><i class="fa fa-user" ></i> Đăng ký</a>
+            </div>
+        </header>
+        <nav id="myMenu">
+            <ul class="flexbox">
+                <li><a href="home.html">TRANG CHỦ</a> </li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">MUA HÀNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <li class="submenu">
+                    <a href="#">CÁCH CHĂM SÓC</a>
+                    <ul class="subcontent">
+                        <li><a href="#">Sen đá</a></li>
+                        <li><a href="#">Bonsai</a></li>
+                        <li><a href="#">Hoa lan</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#" >SẢN PHẨM</a>
+                    <ul class="subcontent">
+                        <li><a href="#">Sen đá</a></li>
+                        <li><a href="#">Bonsai</a></li>
+                        <li><a href="#">Hoa lan</a></li>
+                        <li><a href="#">Đồ lưu niệm</a></li>
+                        <li><a href="#">Phụ kiện Terrarium</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        <section class="advertisement">
+            <div id="demo" class="carousel slide" data-ride="carousel" style="width: 70%; height: 400px;">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../image/senda/1-sen-da-mang-ve-dep-cang-mong.jpg" alt="Los Angeles" width="70%" height="400px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../image/lan/9a3c0183f9ccbab58b5663f651438964.jfif" alt="Chicago" width="70%" height="400px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../image/luuniem/9388806bcbc976a0a8a3f1694df7f9c2.jpg" alt="New York" width="70%" height="400px">
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+        <section id="se-register" >
+            <div id="bg-register" onclick="re_register()"></div>
+            <div id="register">
+                <h1>ĐĂNG KÝ</h1>
+                <div class="form-register">
+                    <div>Họ và Tên:
+                        <input type="text" placeholder="Nguyễn Văn A">
+                    </div>
+                    <div>Ngày sinh:
+                        <input type="date">
+                    </div>
+                    <div>Tên đăng nhập:
+                        <input type="text" placeholder="NGUYENVANA">
+                    </div>
+                    <div>Mật khẩu:
+                        <input type="password" placeholder="*******">
+                    </div>
+                    <div>Xác nhận mật khẩu:
+                        <input type="password" placeholder="*******">
+                    </div>
+                    <div>Email:
+                        <input type="text" placeholder="NGUYENVANA@...com">
+                    </div>
+                    <div>Số điện thoại:
+                        <input type="tel" placeholder="(+84)36.0000.123">
+                    </div>
+                    <div class="accept">
+                        <button type="submit" value="Đăng ký">Xác nhận</button>
+                    </div>
+                    <span>Hoặc đăng ký bằng facebook.</span>
+                    <div class="fb-register">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <span>Bạn đã có tài khoản? <a href="#">Đăng nhập tại đây</a></span>
+                </div>
+            </div>
+        </section>
+        <section id="se-login" >
+            <div id="bg-login" onclick="re_login()"></div>   
+            <div id="login">
+                <h1>ĐĂNG NHẬP</h1>
+                <div class="form-login">
+                    <div>Tên đăng nhập:
+                        <input type="text" placeholder="NGUYENVANA">
+                    </div>
+                    <div>Mật khẩu:
+                        <input type="password" placeholder="*******">
+                    </div>
+                    <div class="accept">
+                        <button type="submit" value="Đăng nhập">Đăng nhập</button>
+                    </div>
+                    <span>Hoặc đăng nhập bằng facebook.</span>
+                    <div class="fb-login">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <span>Bạn quên mật khẩu? <a href="#">Lấy lại mật khẩu.</a></span>
+                </div>
+            </div>   
+        </section>
+        <section class="product-menu">
+    <div>
+        DANH MỤC SẢN PHẨM
+        <span class="line">
+            <i class="fab fa-pagelines"></i>
+        </span>
+    </div>
+    <div class="product-type-nume">
+        <div class="product-nume">
+            <div class="product-frame-nume">
+                <div class="product-image-nume">
+                    <a href="senda.html" class="image-product-nume">
+                        <img src="../image/senda/sen-da-du-kim_cay-xinh-600x600-600x600.jpg" alt="SEN ĐÁ">
+                    </a>
+                </div>
+                <div class="product-info-nume">
+                    <div class="info-name-nume">SEN ĐÁ</div>
+                </div>
+            </div>
+            <div class="product-frame-nume">
+                <div class="product-image-nume">
+                    <a href="bonsai.html" class="image-product-nume">
+                        <img src="../image/bonsai/50022d3855c5df24266eb88fac6f4c19.jfif" alt="BONSAI">
+                    </a>
+                </div>
+                <div class="product-info-nume">
+                    <div class="info-name-nume">BONSAI</div>
+                </div>
+            </div>
+            <div class="product-frame-nume">
+                <div class="product-image-nume">
+                    <a href="lan.html" class="image-product-nume">
+                        <img src="../image/lan/chau-lan-mini-de-ban-lam-viec.png" alt="LAN">
+                    </a>
+                </div>
+                <div class="product-info-nume">
+                    <div class="info-name-nume">LAN MINI</div>
+                </div>
+            </div>
+            <div class="product-frame-nume">
+                <div class="product-image-nume">
+                    <a href="luuniem.html" class="image-product-nume">
+                        <img src="../image/luuniem/qua_luu_niem_sai_gon_1.jpg" alt="QUÀ LƯU NIỆM">
+                    </a>
+                </div>
+                <div class="product-info-nume">
+                    <div class="info-name-nume">QUÀ LƯU NIÊM</div>
+                </div>
+            </div>
+            <div class="product-frame-nume">
+                <div class="product-image-nume">
+                    <a href="terrarium.html" class="image-product-nume">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="TERRARIUM">
+                    </a>
+                </div>
+                <div class="product-info-nume">
+                    <div class="info-name-nume">TERRARIUM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        <section class="section-body flexbox">
+            <div class="section-product">
+                <div class="product-type">
+                    <div class="product-type-name">
+                        <a href="#">SEN ĐÁ</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/senda/1-sen-da-mang-ve-dep-cang-mong.jpg" alt="Sen đá xanh hồng">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Sen đá xanh hồng</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/senda/cây-sen-đá-phật-bà.jpg" alt="Sen đá phật bà">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Sen đá phật bà</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/senda/images.jfif" alt="Sen đá xanh đen">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Sen đá xanh đen</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="product-type">
+                    <div class="product-type-name">
+                        <a href="#">BONSAI</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/bonsai/1191357365pommier-9689.jpg" alt="Bonsai hoa trắng">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Bonsai hoa trắng</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/bonsai/27388299a79517215a5983957b9a9891.jfif" alt="Bonsai hạt diệp">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Bonsai hạt diệp</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/bonsai/50022d3855c5df24266eb88fac6f4c19.jfif" alt="Bonsai cổ thụ mini">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Bonsai cổ thụ mini</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-type">
+                    <div class="product-type-name">
+                        <a href="#">HOA LAN</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/lan/94cffa8c363da676f750e800b1f96f52.jpg" alt="Lan lưu hồng bạch">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Lan lưu hồng bạch</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/lan/9a3c0183f9ccbab58b5663f651438964.jfif" alt="Lan cẩm bạch">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Lan cẩm bạch</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/lan/chau-lan-ho-diep-mini-new.jpg" alt="Lan hồ điệp">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Lan hồ điệp</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-type">
+                    <div class="product-type-name">
+                        <a href="#">ĐỒ LƯU NIỆM</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/luuniem/1-15203898429111242861061.jpg" alt="Vòng sen đá">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Vòng sen đá</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/luuniem/2_nmsm.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Hình nhân</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/luuniem/2ae319f1692976e384c9616437ff3661.jfif" alt="sticker trái cây">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Sticker trái cây</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-type">
+                    <div class="product-type-name">
+                        <a href="#">PHỤ KIỆN TERRARIUM</a>
+                    </div>
+                    <div class="product">
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/TERRARIUM/14321104943090.jpg" alt="Panda">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Panda</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/TERRARIUM/1Pcs-Swimming-Pool-DIY-Resin-Fairy-Garden-Craft-Decoration-Miniature-Micro-Gnome-Terrarium-Gift.jpg" alt="Nhà mini">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Nhà mini</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                        <div class="product-frame">
+                            <div class="product-image">
+                                <a href="#" class="image-product">
+                                    <img src="../image/TERRARIUM/20160709_e903cd8a3ff6d16c1b97ed07f0c43ca7_1468043288.jpg" alt="Bé sữa">
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="info-name">Bé sữa</div>
+                                <div class="info-cost">45.000 VND</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                
+                <div>
+                    <br>
+                    <h3>Địa chỉ liên hệ</h3>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9308737755287!2d106.67647591462286!3d10.816602092294241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1599706441476!5m2!1svi!2s" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h1>LIÊN HỆ</h1>
+            <hr width="5%"/>
+            <p>Nếu bạn có câu hỏi gì vui lòng liên hệ với chúng tôi</p>
+            <div class="contacts flexbox">
+                <div class="help">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <ul>
+                        <li><i class="fa fa-phone"></i><strong> Hotline chăm sóc khách hàng:</strong>
+                            <ol>
+                                <li>1900-0123</li>
+                                <li>(+84)36.0000.123</li>
+                            </ol>
+                        </li>
+                        <li><i class="fa fa-envelope"></i><strong> Email:</strong> <a class="email"href="mailto:Greencore.contact@gmail.com">Greencore.contact@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="time">
+                    <h3>THỜI GIAN LÀM VIỆC</h3>
+                    <ul>
+                        <li><i class="fa fa-calendar"></i><strong> Trong tuần:</strong> T2 - CN (trừ các ngày lễ)</li>
+                        <li><i class="far fa-clock"></i><strong> Khung giờ:</strong>
+                            <ul>
+                                <li>Sáng: 7h-11h</li>
+                                <li>Trưa: 13h-19h</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <from>
+                    <table class="sendmsg">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Your name">
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Your email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea placeholder="Content"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="SEND MESSAGE">
+                            </td>
+                        </tr>
+                    </table>
+                    </from>
+                </div>
+            </div>
+            <hr color="black">
+            <div>
+                <h3>ĐỊA CHỈ PHÒNG KINH DOANH</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> Hà Nội:</strong> 123 Hai Bà Trương, Hà Nội</li>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> TP.HCM:</strong> 371 Nguyễn Kiệm, p3, G.Vấp, TP.HCM</li>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> Tây Ninh:</strong> 460 QL22, Hòa Thành, Tây Ninh</li>
+                </ul>
+                <h4>Greencore nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</h4>
+            </div>
+        </footer>
+    </body>
+</html>
