@@ -1,0 +1,281 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.flexbox {
+    display: flex;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* BODY*/
+/*HEADER*/
+header.header{
+    margin: 0 auto;
+    height: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzrjUu2nWUKiGN4wTzRxVIQOwBStJ3nk71Ug&usqp=CAU);
+}
+
+div.search{
+    width: 30%;
+    padding: 2%;
+    height: 40px;
+}
+
+div.search > a > i{
+    padding-top: 6px;
+}
+
+div.search > a{
+    background-color: #4caf50;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    padding: 7px;
+    display: block;
+    color: black;
+}
+
+div.search > a:active{
+    background-color: black;
+    color: green;
+}
+.search input.timkiem{
+    width: 90%;
+    height: 35px;
+    outline: none;
+}
+
+div.logo{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 30%;
+}
+div.logo > a > img {
+    height: 100px;
+    display: block;
+    padding-left: 15%;
+}
+
+div.bag{
+    width: 20%;
+    padding-top: 2%;
+}
+
+div.bag > div.shopping-icon{
+   width: 50px;
+   margin-right: 0;
+   font-size: 40px;
+   padding-right: 20px;
+   color: #4caf50;
+}
+div.dangnhap{
+    font-size: medium;
+    width: 12%;
+    padding-top: 2%;
+    text-decoration: none;
+    padding-left: 20px;
+}
+div.dangnhap > a > i{
+    font-size: 30px;
+}
+
+div.dangky{
+    font-size: medium;
+    width: 10%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+div.dangky > a > i{
+    font-size: 30px;
+}
+
+div.dangnhap a:link, div.dangky a:link, div.bag a:link{
+    color: #4caf50;
+}
+
+div.dangnhap a:visited, div.dangky a:visited, div.bag a:visited{
+    color: #4caf50;
+}
+
+div.dangnhap a:hover, div.dangky a:hover, div.bag a:hover{
+    text-decoration: underline;
+}
+/*NAV*/
+nav{
+    background: linear-gradient(30deg,#4caf50 0%, #cddc39 100%);
+}
+nav > ul{
+    padding: 0;
+    margin: 0;
+}
+nav > ul > li{
+    width: 15%;
+}
+nav > ul > li > a{
+    text-align: center;
+    display: block;
+    color: green;
+    font-weight: bold;
+    padding: 17px 20px;
+    transition: transform 0.5s
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background-color: greenyellow;
+}
+
+nav > ul > li > a:active{
+    background-color: green;
+    color: greenyellow;
+}
+
+.subcontent{
+    display: none;
+    position: absolute;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(30deg,#4caf50 0%, #cddc39 100%);
+}
+
+.subcontent > li > a{
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    transition: transform 0.5s
+}
+
+.subcontent > li > a:hover{
+    background-color: greenyellow;
+    transform: scale(1.1);
+}
+
+.subcontent > li > a:active{
+    background-color: green;
+    color: greenyellow;
+}
+
+.submenu:hover .subcontent{
+    display: block;
+}
+
+.subcontent a{
+    color: green;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+
+/*SECTION register*/
+
+
+
+div#bg-register{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+/*SECTION login*/
+
+
+div#bg-login{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(30deg,#4caf50 0%, #cddc39 100%);
+    color: white;
+    padding: 0.5%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer h1, footer p {
+    text-align: center;
+}
+
+.help {
+    width: 25%;
+}
+
+.help a:link{
+    color: white;
+}
+.time {
+    width: 25%;
+}
+
+.contact {
+    width: 50%;
+}
+
+table.sendmsg {
+    width: 100%;
+}
+
+.sendmsg input[type="text"] {
+    width: 90%;
+    padding: 10px;
+}
+
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    height: 60px;
+}
+
+footer input[type="submit"] {
+    background-color: orange;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+footer input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+footer input[type="submit"]:active{
+    background-color: black;
+    color: white;
+}
+
+table.sendmsg tr:last-child {
+    text-align: center;
+}
