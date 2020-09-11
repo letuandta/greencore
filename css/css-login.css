@@ -1,0 +1,75 @@
+div#login{
+    width: 30%;
+    overflow: hidden;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    bottom: 100%;
+    z-index: 99;
+    transition: bottom ease-in-out 0.4s;
+}
+div#login h1{
+    color: orangered;
+    text-align: center;
+    background-color: palegreen;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+div.form-login{
+    border-left: 2px solid palegreen;
+    border-right: 2px solid palegreen;
+    border-bottom: 2px solid palegreen;
+    background-color: white;
+}
+div.form-login span{
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+div.form-login > div{
+    padding: 2%;
+}
+div.form-login input{
+    width: 50%;
+    left: 45%;
+    position: absolute;
+}
+div.accept button{
+    width: 100%;
+    margin:2px 0 0 0;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+div.accept button:hover{
+    background-color: darkorange;
+}
+div.accept button:active{
+    background-color: rgb(214, 120, 6);
+}
+
+div.fb-login {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: larger;
+    color: white;
+    background-color: #551a8b;
+    text-align: center;
+    padding: 0;
+}
+div.fb-login a{
+    display: block;
+}
+div.fb-login:hover{
+    background-color: #461474
+}
+div.fb-login:active{
+    background-color: #22073d
+}
+div.fb-login a:visited{
+    color: white;
+}
