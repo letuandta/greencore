@@ -15,7 +15,6 @@
     width: 30%;
     margin: auto;
     background-color: white;
-    overflow: hidden;
     margin-top: 1%;
     border: 1px solid rgba(0, 0, 0, 0.295);
 }
@@ -57,28 +56,23 @@
     background-color: rgb(96, 221, 106);
 }
 
-.sellnow {
-    top: 0;
-    bottom: 0;
+.product-info::before {
+    content: "MUA NGAY";
     position: absolute;
-    width: 0%;
     background-color: orange;
-    z-index: 999;
-    overflow: hidden;
+    width: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 37px;
+    color: white;
     transition: width ease-in-out 0.5s;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.sellnow a:hover {
-    text-decoration: none ;
-}
-
-.sellnow a h1 {
-   color: papayawhip;
-   line-height: 60px;
-   padding: 0;
-}
-
-.product-info:hover .sellnow {
+.product-info:hover::before {
     width: 100%;
 }
 

@@ -54,7 +54,8 @@ div.search > a:active{
 .search input.timkiem{
     width: 90%;
     height: 35px;
-    outline: none;
+    outline-color: palegreen;
+    outline-width: 2px;
 }
 
 div.logo{
@@ -133,6 +134,7 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:hover{
+    text-decoration: none;
     transform: scale(1.1);
     background-color: greenyellow;
 }
@@ -159,6 +161,7 @@ nav > ul > li > a:active{
 }
 
 .subcontent > li > a:hover{
+    text-decoration: none;
     background-color: greenyellow;
     transform: scale(1.1);
 }
