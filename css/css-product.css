@@ -52,10 +52,36 @@
     overflow: hidden;
 }
 .product-info{
-    padding: 2%;
+    position: relative;
     text-align: center;
     background-color: rgb(96, 221, 106);
 }
+
+.sellnow {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0%;
+    background-color: orange;
+    z-index: 999;
+    overflow: hidden;
+    transition: width ease-in-out 0.5s;
+}
+
+.sellnow a:hover {
+    text-decoration: none ;
+}
+
+.sellnow a h1 {
+   color: papayawhip;
+   line-height: 60px;
+   padding: 0;
+}
+
+.product-info:hover .sellnow {
+    width: 100%;
+}
+
 .info-cost{
     font-size: 21px;
     color: red;
