@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Greencore</title>
+        <link href="../css/css-form.css" rel="stylesheet"/>
+        <link href="../css/css-register.css" rel="stylesheet" />
+        <link href="../css/css-login.css" rel="stylesheet" />
+        <link href="../css/css-product.css" rel="stylesheet" />
+        <link href="../css/css-productmenu.css" rel="stylesheet" />
+        <link href="../css/css-news2.css" rel="stylesheet" />
+        <link href="../css/css-advertisement.css" rel="stylesheet" />       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/js.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+        <link href="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.15752-9/117076668_979598572493138_7428982129376158369_n.png?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=UYx4ZEDiW-QAX89bxl0&_nc_ht=scontent.fsgn6-1.fna&oh=92559c02a00e672e096c959b92eef741&oe=5F549755" rel="shortcut icon"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+        </style>
+    </head>
+    <body>   
+        <header id="Header" class="header flexbox">
+            <div class="search flexbox">
+                <input class="timkiem" type="text" placeholder="Tìm kiếm: Sen đá đỏ, Cây cảnh mini,...">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="../image/logo.png" alt="logo"/></a>              
+            </div>
+            <div class="bag flexbox">
+                <div class="shopping-icon">
+                    <i class="fas fa-shopping-cart"></i> 
+                </div>
+                <div class="shopping">
+                    <div class="thanhtien">
+                        <a href="#"> Thành tiền: <strong><span style="color: red;">0</span> VNĐ</strong></a>
+                    </div>
+                    <div class="giohang">
+                        <a href="#"><strong>Xem giỏ hàng</strong></a>
+                    </div>
+               </div>
+            </div>
+            <div class="dangnhap">
+                <a href="#" onclick="login()"><i class="fas fa-sign-in-alt"></i> Đăng nhập | </a>
+            </div>
+            <div class="dangky">
+                <a href="#" onclick="register()"><i class="fa fa-user" ></i> Đăng ký</a>
+            </div>
+        </header>
+        <nav id="myMenu">
+            <ul class="flexbox">
+                <li><a href="home.html">TRANG CHỦ</a> </li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="tintuc.html">TIN TỨC</a></li>
+                <li><a href="#">MUA HÀNG</a></li>
+                <li><a href="#contact">LIÊN HỆ</a></li>
+                <li class="submenu">
+                    <a href="#">CÁCH CHĂM SÓC</a>
+                    <ul class="subcontent">
+                        <li><a href="#">Sen đá</a></li>
+                        <li><a href="#">Bonsai</a></li>
+                        <li><a href="#">Hoa lan</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#" >SẢN PHẨM</a>
+                    <ul class="subcontent">
+                        <li><a href="senda.html">Sen đá</a></li>
+                        <li><a href="bonsai.html">Bonsai</a></li>
+                        <li><a href="lan.html">Hoa lan</a></li>
+                        <li><a href="luuniem.html">Đồ lưu niệm</a></li>
+                        <li><a href="terrarium.html">Phụ kiện Terrarium</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        <section>
+            <div  style="font-size: 32px; font-weight: 300;">TIN TỨC
+                <div class="flexbox">
+                    <hr width="6%" color="green" style="margin: 0; height: 3px;">
+                    <hr width="5%" color="gray" style="margin: 0; height: 3px;">
+                </div>
+            </div>
+            <div class="news">
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+                <div class="content-news">
+                    <a href="#" class="flexbox">
+                        <img src="../image/TERRARIUM/phu-kien-tieu-canh.jpg" alt="news">
+                        <p style="color: black;">TÌM HIỂU VỀ TIỂU CẢNH SEN ĐÁ VÀ TIỂU CẢNH SEN ĐÁ TERRARIUM – THÚ CHƠI MỚI ĐANG ĐỔ BỘ VÀO VIỆT NAM
+                            <br>
+                            <span style="color: black;"><em><strong>Ngày:</strong> 23/9/2020</em></span>
+                        </p>
+                    </a>   
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <h1>LIÊN HỆ</h1>
+            <hr width="5%"/>
+            <p>Nếu bạn có câu hỏi gì vui lòng liên hệ với chúng tôi</p>
+            <div class="contacts flexbox">
+                <div class="help">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <ul>
+                        <li><i class="fa fa-phone"></i><strong> Hotline chăm sóc khách hàng:</strong>
+                            <ol>
+                                <li>1900-0123</li>
+                                <li>(+84)36.0000.123</li>
+                            </ol>
+                        </li>
+                        <li><i class="fa fa-envelope"></i><strong> Email:</strong> <a class="email"href="mailto:Greencore.contact@gmail.com">Greencore.contact@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="time">
+                    <h3>THỜI GIAN LÀM VIỆC</h3>
+                    <ul>
+                        <li><i class="fa fa-calendar"></i><strong> Trong tuần:</strong> T2 - CN (trừ các ngày lễ)</li>
+                        <li><i class="far fa-clock"></i><strong> Khung giờ:</strong>
+                            <ul>
+                                <li>Sáng: 7h-11h</li>
+                                <li>Trưa: 13h-19h</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <from>
+                    <table class="sendmsg">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Your name">
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Your email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea placeholder="Content"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="SEND MESSAGE">
+                            </td>
+                        </tr>
+                    </table>
+                    </from>
+                </div>
+            </div>
+            <hr color="black">
+            <div>
+                <h3>ĐỊA CHỈ PHÒNG KINH DOANH</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> Hà Nội:</strong> 123 Hai Bà Trương, Hà Nội</li>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> TP.HCM:</strong> 371 Nguyễn Kiệm, p3, G.Vấp, TP.HCM</li>
+                    <li><i class="fas fa-map-marker-alt"></i><strong> Tây Ninh:</strong> 460 QL22, Hòa Thành, Tây Ninh</li>
+                </ul>
+                <h4>Greencore nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</h4>
+            </div>
+        </footer>
+    </body>
+</html>

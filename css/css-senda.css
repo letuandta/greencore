@@ -85,10 +85,31 @@ div.h1{
     overflow: hidden;
 }
 .product-info{
-    padding: 2%;
     text-align: center;
     background-color: rgb(96, 221, 106);
+    position: relative;
 }
+
+.product-info::before {
+    content: "MUA NGAY";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 37px;
+    color: white;
+    transition: width ease-in-out 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-info:hover::before {
+    width: 100%;
+}
+
 .info-cost{
     font-size: 21px;
     color: red;
